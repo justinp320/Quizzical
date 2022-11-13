@@ -1,19 +1,19 @@
 import React from "react"
-import Overlay from "./components/Intro.js"
+import Intro from "./components/Intro.js"
 import Quiz from "./components/Quiz.js"
 
 export default function App(){
     
     const [started, setStarted] = React.useState(false)
     
-    function loadQuiz(){
+    function startQuiz(){
         setStarted(true)
     }
     
     
     return(
         <main>
-            {!started && <Overlay startQuiz={() => loadQuiz()}/>}
+            {!started && <Intro startQuiz={() => startQuiz()}/>}
             {started && <Quiz />}
         </main>
     )
