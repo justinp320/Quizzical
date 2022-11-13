@@ -91,7 +91,7 @@ export default function Quiz(){
             <div className="quiz">
                 {allQuestions}
                 <div className="quiz-footer">
-                    {!submitted && hasLoaded && <button onClick={()=>handleSubmit()} className="check-answer-btn">Check Answers</button>}
+                    {!submitted && hasLoaded && <button onClick={()=>handleSubmit()} className="check-answer-btn">Check answers</button>}
                     {submitted && <p className="bottom-text">{score}</p>}
                     {submitted && <button className="play-again-btn" onClick={handlePlayAgain} >Play again</button>}
                 </div>
