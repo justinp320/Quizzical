@@ -55,6 +55,7 @@ body{
 .quiz-container{
     background: url(./images/quiz-top.svg) right top no-repeat, url(./images/quiz-bottom.svg) left bottom no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
